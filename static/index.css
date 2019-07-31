@@ -1,0 +1,32 @@
+body {
+    /* Set to zero so data-grid fills entire screen */
+    margin: 0;
+}
+
+.data-grid {
+    /* Use full vertical viewport */
+    height: 100vh;
+    /* Centre the div horizontally with smaller width */
+    width: 75%;
+    margin: 0 auto;
+
+    /* Use grid for laying out children */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+
+    /* font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.grid-label {
+    text-align: right;
+    margin-right: 25px;
+    font-size: 3em;
+}
+
+.grid-value {
+    font-size: 4.5em;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Data</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+  </head>
+  <body>
+    <div class="data-grid">
+      <h2 class="grid-label">Temperature</h2>
+      <h1 class="grid-value" id="temperature"></h1>
+      
+      <h2 class="grid-label">Humidity</h2>
+      <h1 class="grid-value" id="humidity"></h1>
+
+      <h2 class="grid-label">Air Pressure</h2>
+      <h1 class="grid-value" id="air-pressure"></h1>
+    </div>
+  </body>
+</html>
